@@ -8,8 +8,6 @@
  \usepackage{booktabs}
  \usepackage{natbib}
  \usepackage{float}
- \usepackage{lipsum}
- \usepackage[colorlinks=true, citecolor=blue]{hyperref}
 
 
 
@@ -42,7 +40,7 @@ This is the abstract.
  The methods are described in Section~\ref{sec:meth}.
  The results are reported in Section~\ref{sec:results}.
  A discussion concludes in Section~\ref{sec:disc}.
- 
+
 
 
  \section{Data}
@@ -50,7 +48,7 @@ This is the abstract.
 
  Use this section to describe the data that helps to answer your research questions.
 
- \begin{figure}[!htb]
+ \begin{figure}[h!]
     \centering
     \includegraphics[width=10 cm]{quadraticform.png}
     \caption{This is my first figure.}
@@ -62,14 +60,17 @@ This is the abstract.
 
  Use this section to present the methodologies that will generate results by analyzing the data.
 
- A quadratic equation is an equation where the highest exponent of the given variable is 2. The standard form of a quadratic equation is $ax^2 + bx +c$ where a does not equal zero, and a, b, and c are all constants.
+ The quadratic formula gives the solution to a quadratic equation in standard form, and is given by 
 
- The quadratic formula gives the solution to a quadratic equation in standard form, and is given by $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.$$
+ \begin{equation}
+    \label{eq:quadratic}
+   x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.
+   \end{equation}
 
  \section{Results}
  \label{sec:results}
 
- \begin{table}[H]
+ \begin{table}[h]
     \caption{This is my first table.}
     \label{tab:rv}
   \centering
