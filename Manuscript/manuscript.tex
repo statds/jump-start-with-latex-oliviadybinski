@@ -7,6 +7,10 @@
  \usepackage{graphicx}
  \usepackage{booktabs}
  \usepackage{natbib}
+ \usepackage{float}
+ \usepackage{lipsum}
+ \usepackage[colorlinks=true, citecolor=blue]{hyperref}
+
 
 
  %% meta data
@@ -34,7 +38,10 @@ This is the abstract.
 
  % roadmap
  The rest of the paper is organized as follows.
- The data will be presented in Section~2.
+ The data will be presented in Section~\ref{sec:data}.
+ The methods are described in Section~\ref{sec:meth}.
+ The results are reported in Section~\ref{sec:results}.
+ A discussion concludes in Section~\ref{sec:disc}.
 
 
  \section{Data}
@@ -42,9 +49,9 @@ This is the abstract.
 
  Use this section to describe the data that helps to answer your research questions.
 
- \begin{figure}
+ \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\textwidth]{quadraticform.png}
+    \includegraphics[width=10 cm]{quadraticform.png}
     \caption{This is my first figure.}
     \label{fig:Quadratic Formula}
   \end{figure}
@@ -61,7 +68,7 @@ This is the abstract.
  \section{Results}
  \label{sec:results}
 
- \begin{table}[ht]
+ \begin{table}[H]
     \caption{This is my first table.}
     \label{tab:rv}
   \centering
